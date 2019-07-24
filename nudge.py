@@ -1,11 +1,12 @@
 import pyautogui, time
 
-pyautogui.FAILSAFE = True
+
 
 print('Press Ctrl-C to quit.')
 try:
     while True:
         # Get the mouse coordinates.
+        pyautogui.FAILSAFE = True
         x, y = pyautogui.position()
         # move mouse 3 pixles up
         pyautogui.moveTo(x, y-3, duration=0.25)
