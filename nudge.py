@@ -1,5 +1,7 @@
 import pyautogui, time
 
+pyautogui.FAILSAFE = True
+
 print('Press Ctrl-C to quit.')
 try:
     while True:
